@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>OIP APIs</title>
+    <title>Swagger UI</title>
     <link rel="stylesheet" type="text/css" href="dist/swagger-ui.css" />
     <link rel="icon" type="image/png" href="dist/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="dist/favicon-16x16.png" sizes="16x16" />
@@ -31,7 +31,7 @@
   </head>
 
   <body>
-    <div id="oip"></div>
+    <div id="swagger-ui"></div>
 
     <script src="dist/swagger-ui-bundle.js" charset="UTF-8"> </script>
     <script src="dist/swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
@@ -40,7 +40,7 @@
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
         url: "oip-apis.yaml",
-        dom_id: '#oip',
+        dom_id: '#swagger-ui',
         deepLinking: true,
         presets: [
           SwaggerUIBundle.presets.apis,
